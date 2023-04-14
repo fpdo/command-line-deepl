@@ -4,7 +4,7 @@ Allows user to translate sentences direct from the terminal. By default translat
 # Getting Started
 1. `pip install -r requirements.txt`.
 2. Create a `.env` file 
-3. Head over to [DeepL](https://www.deepl.com/) create an accout, and copy your next API key.
+3. Head over to [DeepL](https://www.deepl.com/) create an account, and copy your new API key.
 4. Inside the `.env` file, create a variable called `API_KEY` and assign the key from #3.
   `API_KEY = "YOUR-API-KEY"`
 
@@ -28,7 +28,7 @@ python3 translate.py <sentence_to_translate>
 ```
 
 # Specify Languages
-You are also able to specify langugages to translate from/to by provinding them in the following format as an argument
+You are also able to specify languages to translate from/to by provinding them in the following format as an argument
 ```
 <from_language-to_language> <from_langugage_sentece>
 ```
@@ -45,3 +45,9 @@ The project uses the python's Flake8 to check formatting style. It can be run lo
 flake8
 ```
 And if there are violations they will be printed in the terminal.
+
+# Testing
+The project uses `pytest` for unit testing
+```
+pytest or pytest -s (to print output to the terminal)
+```
