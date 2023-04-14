@@ -1,3 +1,4 @@
 python-dotenv
 flake8
 deepl
+pytest
