@@ -1,5 +1,5 @@
 # Command-Line-DeepL
-Allows user to translate sentences from English to Dutch using DeepL API and the command line
+Allows user to translate sentences direct from the terminal. By default translation is done from EN-US to NL
 
 # Getting Started
 1. `pip install -r requirements.txt`.
@@ -22,10 +22,22 @@ deepl can you help me to get to the train station
 ```
 
 If you don't want or can't add the script to your aliases, run it normally
-lile any other python script.
+like any other python script.
 ```
 python3 translate.py <sentence_to_translate>
 ```
+
+# Specify Languages
+You are also able to specify langugages to translate from/to by provinding them in the following format as an argument
+```
+<from_language-to_language> <from_langugage_sentece>
+```
+
+For example
+```
+deepl nl-en zal het werken?
+```
+Will translate the sentence from Dutch to English (US)
 
 # Linting
 The project uses the python's Flake8 to check formatting style. It can be run locally by using.
